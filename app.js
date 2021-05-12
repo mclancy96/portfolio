@@ -1,5 +1,6 @@
 const express = require("express"),
-    app = express();
+    app = express(),
+    bootstrap = require('bootstrap'); 
 
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
