@@ -9,5 +9,6 @@ app.get("/", (req,res) => {
 });
 
 app.listen(process.env.PORT, function(){
-	console.log("SEMS Member Site has started...");
+	console.log("Portfolio has started...");
+    console.log("Let me know what you think!")
 });
