@@ -1,8 +1,5 @@
 const express = require("express"),
-    app = express(),
-    bootstrap = require('bootstrap'),
-    popper = require('popper.js'),
-    jquery = require("jquery");
+    app = express();
 
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
