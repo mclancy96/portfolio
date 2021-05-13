@@ -1,3 +1,69 @@
 .cover-container {
-    max-width: 42em;
+    max-width: 100vw;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    background-color: #dbdae2;
+    color: #364130;
+}
+
+#welcome{
+    background-image: url("../public/img/seattle2.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow-x: visible;
+    width:100%;
+    top: 2rem;
+}
+
+.jumbotron{
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    color: #364130;
+    -webkit-text-fill-color:  #364130; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #b2aea5;
+    padding: 0;
+    margin-bottom: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#about {
+    background-image: linear-gradient(to right,#489774,#69be28);
+    
+    
+}
+
+#contact {
+    background-image: linear-gradient(to right, #002244,#01458a);
+    color: #b2aea5;
+}
+
+footer {
+    background-color: #363636;
+    color:#b2aea5;
+}
+
+a:hover {
+    font-weight: 700;
+    animation: blinker 0.9s linear infinite;
+    color:red;
+}
+
+.white-link{
+    color:#b2aea5;
+}
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
 }
