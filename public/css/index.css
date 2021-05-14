@@ -9,6 +9,7 @@ body{
 }
 
 #welcome{
+    background-image: url("../seattle2.jpg");
     background-size: cover;
     background-position: center;
     overflow-x: visible;
