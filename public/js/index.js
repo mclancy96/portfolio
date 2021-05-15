@@ -8,11 +8,12 @@ $(window).on("load",() => {
                 if ($(this).css("opacity")==0) {
                     $(this).fadeTo(500,1);
                 }
-            } else {
-                if ($(this).css("opacity")==1) {
-                    $(this).fadeTo(500,0);
-                }
-            }
+            } 
+            // else {
+            //     if ($(this).css("opacity")==1) {
+            //         $(this).fadeTo(500,0);
+            //     }
+            // }
         });
     }).scroll(); 
 });
