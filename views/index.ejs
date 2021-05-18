@@ -25,7 +25,7 @@
 							Welcome to My Development Portfolio!
 							<br>
 							<a href="#about">
-							<button class="btn btn-lg btn-outline-dark">
+							<button class="btn btn-lg btn-dark">
 								Enter
 							</button>
 						</a>
@@ -42,7 +42,7 @@
 										<p>I am actively seeking a job for web developer positions and/or administrative positions. I am open to relocating to the Seattle, WA area.</p>
 									</div>
 									<div class="text-center pb-3">
-										<a target="_blank" class="text-center" href="https://drive.google.com/file/d/1RxYInWezvYLE_emJoOWIM5Fim_KKf3n6/view?usp=sharing">View My Resume</a>
+										<a target="_blank" class="text-center link-light" href="https://drive.google.com/file/d/1RxYInWezvYLE_emJoOWIM5Fim_KKf3n6/view?usp=sharing">View My Resume</a>
 									</div>
 								</div>                        
 							</div>
@@ -55,65 +55,84 @@
 								<h2 class="section-title text-center display-4 scroll-fade" >
 									My Projects
 								</h2>
-								<div class="row border-top border-dark p-2 ">
-									<div class="col-lg-4 col-sm-12">
-										<div>
-											<h3 class="scroll-fade">
-												Stockton EMS Member Portal
-											</h3>
-											<div>
-												<p class="mb-4 scroll-fade">
-													This project was necessitated by inefficient scheduling processes in the organization and a lack of a central location for members to find information. This project was the reason I initially learned web development, and it was also the way that I found that I really liked web development. Over the summer of 2020, I learned web development to design, code, and deploy this member portal. This was built using an HTML/CSS/JS frontend with a Node.js backend and MongoDB database. The link to the live site is a static version of the actual site with essentially all ejs removed because there is no database connected for the public version. All of the links between pages should work, but none of the forms will submit.
-												</p>
+								<!-- Start Project Row -->
+								<div class="row row-cols-md-1 row-cols-lg-2 g-4 my-2">
+									<!-- Card 1 -->
+									<div class="col">
+										<div class="card h-100 scroll-fade">
+											<h3 class="card-header text-center">Stockton EMS Member Portal</h3>
+											<div class="card-img-top">
+												<a href="https://sems.mikeclancy.me" target="_blank">
+													<div class="border border-dark">
+														<img class="img-fluid" src="../public/img/sems_scrnsht.png">
+													</div>
+												</a>
 											</div>
-											<div class="d-flex justify-content-around p-2 scroll-fade">
-												<a target="_blank" class= "link-dark"  href="https://sems.mikeclancy.me">
+											<div class="card-body">
+												<p class="card-text fs-5">This project was necessitated by inefficient scheduling processes in the organization and a lack of a central location for members to find information. This project was the reason I initially learned web development, and it was also the way that I found that I really liked web development. Over the summer of 2020, I learned web development to design, code, and deploy this member portal. This was built using an HTML/CSS/JS frontend with a Node.js backend and MongoDB database. The link to the live site is a static version of the actual site with essentially all ejs removed because there is no database connected for the public version. All of the links between pages should work, but none of the forms will submit.</p>
+												
+											</div>
+											
+											<div class="d-flex justify-content-evenly card-footer bg-transparent">
+												<a target="_blank" class= "link-dark fs-3"  href="https://sems.mikeclancy.me">
 													Live Site
 												</a>
-												<a target="_blank" class= "link-dark" href="https://github.com/mclancy96/SEMS_Member_Portal_Public">
+												<a target="_blank" class= "link-dark fs-3" href="https://github.com/mclancy96/SEMS_Member_Portal_Public">
 													GitHub Source Code
 												</a>
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-8 col-sm-12 align-middle scroll-fade">
-										<div class="align-middle">
-											<a href="https://sems.mikeclancy.me" target="_blank">
-												<div data-tilt="" class="thumbnail rounded ">
-													<img class="img-fluid" src="/img/sems_scrsht.png">
-												</div>
-											</a>
-										</div>
-									</div>
-								</div>
-								<div class="row border-top border-dark p-2">
-									<div class="col-lg-4 col-sm-12">
-										<div>
-											<h3 class="scroll-fade">
-												Random Hold Location Selector
-											</h3>
-											<div>
-												<p class="mb-4 scroll-fade">
-													This app will generate a random hold location specific to my local Target location. The purpose of this app is to get a random location in our store's order pickup hold location. We could then inspect the bags in that location to see if all of the items in the bag are prepared properly and reward the team member that stowed that bag into that specific hold location. Ultimately, the goal was to encourage team members to make sure that they are properly stowing their orders in the hold locations.
-												</p>
+									<!-- Card 2 -->
+									<div class="col">
+										<div class="card h-100 scroll-fade d-flex">
+											<h3 class="card-header text-center">Random Hold Location Selector</h3>
+											<div class="card-img-top">
+												<a href="https://tgt.mikeclancy.me" target="_blank">
+													<div class="border border-dark">
+														<img class="img-fluid" src="../public/img/tgt_scrnsht.png">
+													</div>
+												</a>
 											</div>
-											<div class="d-flex justify-content-around p-2 scroll-fade">
-												<a target="_blank" class= "link-dark" href="https://tgt.mikeclancy.me">
+											<div class="card-body">
+												<p class="card-text fs-5">This app will generate a random hold location specific to my local Target location. The purpose of this app is to get a random location in our store's order pickup hold location. We could then inspect the bags in that location to see if all of the items in the bag are prepared properly and reward the team member that stowed that bag into that specific hold location. Ultimately, the goal was to encourage team members to make sure that they are properly stowing their orders in the hold locations.</p>
+												
+											</div>
+											
+											<div class="d-flex justify-content-evenly card-footer bg-transparent">
+												<a target="_blank" class= "link-dark fs-3" href="https://tgt.mikeclancy.me">
 													Live Site
 												</a>
-												<a target="_blank" class= "link-dark" href="https://github.com/mclancy96/hold_location_generator">
+												<a target="_blank" class= "link-dark fs-3" href="https://github.com/mclancy96/hold_location_generator">
 													GitHub Source Code
 												</a>
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-8 col-sm-12 scroll-fade">
-										<div >
-											<a href="https://tgt.mikeclancy.me" target="_blank">
-												<div data-tilt="" class="thumbnail rounded">
-													<img class="img-fluid" src="/img/tgt_scrnsht.png">
-												</div>
-											</a>
+									<!-- Card 3 -->
+									<div class="col">
+										<div class="card h-100 scroll-fade d-flex">
+											<h3 class="card-header text-center">Gradient Background Editor</h3>
+											<div class="card-img-top">
+												<a href="https://bgg.mikeclancy.me" target="_blank">
+													<div class="border border-dark">
+														<img class="img-fluid" src="../public/img/gradient_scrnsht.png">
+													</div>
+												</a>
+											</div>
+											<div class="card-body">
+												<p class="card-text fs-5"></p>
+												
+											</div>
+											
+											<div class="d-flex justify-content-evenly card-footer bg-transparent">
+												<a target="_blank" class= "link-dark fs-3" href="https://bgg.mikeclancy.me">
+													Live Site
+												</a>
+												<a target="_blank" class= "link-dark fs-3" href="https://github.com/mclancy96/hold_location_generator">
+													GitHub Source Code
+												</a>
+											</div>
 										</div>
 									</div>
 								</div>

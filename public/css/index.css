@@ -8,6 +8,10 @@ body{
     color: #364130;
 }
 
+.btn-dark{
+    background-color: #364130;
+}
+
 #welcome{
     background-image: url("../img/seattle2.png"); 
     background-size: cover;
@@ -150,5 +154,5 @@ a:hover {
 
 /* ==========================Scroll Fade 2=============================== */
 .scroll-fade {
-    opacity: 1;
+    opacity: 0;
 }

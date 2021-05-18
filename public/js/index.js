@@ -1,7 +1,6 @@
 $(window).on("load",() => {
     $(window).scroll(() => {
         let windowBottom = $(this).scrollTop() + $(this).innerHeight();
-        console.log("windowBottom: ", windowBottom)
         $(".scroll-fade").each(function() {
             let objectTop = $(this).offset().top;
             if (objectTop < windowBottom) { 
