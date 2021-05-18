@@ -5,7 +5,7 @@ $(window).on("load",() => {
             let objectTop = $(this).offset().top;
             if (objectTop < windowBottom) { 
                 if ($(this).css("opacity")==0) {
-                    $(this).fadeTo(500,1);
+                    $(this).fadeTo(1000,1);
                 }
             } 
             // else {
