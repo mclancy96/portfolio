@@ -2,8 +2,6 @@ const express = require("express"),
     app = express(),
     axios = require('axios');
 
-process.env.PORT = 8080;
-
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 
