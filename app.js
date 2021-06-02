@@ -2,14 +2,16 @@ const express = require("express"),
     app = express(),
     axios = require('axios');
 
+process.env.PORT = 8080;
+
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 
 app.get("/", (req,res) => {
-    axios.get('https://sems.mikeclancy.me');
-    axios.get('https://tgt.mikeclancy.me');
-    axios.get('https://bgg.mikeclancy.me');
-    axios.get('https://wdash.mikeclancy.me')
+    axios.get('https://sems.mikeclancy.me').catch(err=>console.log(err));
+    axios.get('https://tgt.mikeclancy.me').catch(err=>console.log(err));
+    axios.get('https://bgg.mikeclancy.me').catch(err=>console.log(err));
+    axios.get('https://wdash.mikeclancy.me').catch(err=>console.log(err))
 	res.render("./index", {});
 });
 
