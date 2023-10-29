@@ -9,10 +9,10 @@ dotenv.config();
 const iconLink = process.env.ICONS
 
 app.get("/", (req, res) => {
-    // axios.get('https://sems.mikeclancy.me').catch(err=>console.log(err));
-    // axios.get('https://tgt.mikeclancy.me').catch(err=>console.log(err));
-    // axios.get('https://bgg.mikeclancy.me').catch(err=>console.log(err));
-    // axios.get('https://wdash.mikeclancy.me').catch(err=>console.log(err))
+    axios.get('https://repsearch.clancymike.com').catch(err => console.log(err));
+    axios.get('https://weatherdashboard.clancymike.com').catch(err => console.log(err));
+    axios.get('https://bgg.clancymike.com').catch(err => console.log(err));
+    axios.get('https://wdash.clancymike.com').catch(err => console.log(err))
     res.render("index", { iconLink: iconLink });
 });
 
